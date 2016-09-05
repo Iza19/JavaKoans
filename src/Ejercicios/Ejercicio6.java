@@ -1,5 +1,7 @@
 package Ejercicios;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
 import java.util.stream.IntStream;
 
 /**
@@ -11,7 +13,14 @@ import java.util.stream.IntStream;
  */
 public class Ejercicio6 {
     public static void main(String[] args) {
-        Integer fin = 200;
-        IntStream.rangeClosed(1, fin).forEach(System.out::println);
+        Integer fin = 0;
+        System.out.println("Introduzca un número entero...");
+        try {
+            Scanner entrada = new Scanner(System.in);
+            fin = entrada.nextInt();
+            IntStream.rangeClosed(1, fin).forEach(System.out::println);
+        } catch (InputMismatchException ex) {
+            System.out.println("No!! Ese no!");
+        }
     }
 }
