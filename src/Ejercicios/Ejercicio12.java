@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
 public class Ejercicio12 {
     public static void main(String[] args) {
         IntStream.rangeClosed(1, 100).forEach(System.out::println);
-        System.out.println(IntStream.rangeClosed(1, 100).filter((n) -> n % 2 == 0).sum());
-        System.out.println(IntStream.rangeClosed(1, 100).filter((n) -> n % 2 != 0).sum());
+        System.out.println("Suma de pares:  " + IntStream.rangeClosed(1, 100).filter((n) -> n % 2 == 0).sum());
+        System.out.println("Suma de impares:  " + IntStream.rangeClosed(1, 100).filter((n) -> n % 2 != 0).sum());
     }
 }
