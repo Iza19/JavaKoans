@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
  */
 public class Ejercicio20 {
     public static void main(String[] args) {
-        Integer numero = 15;
-        //TODO: Calcular factorial con lambda...
+        Integer numero = 6;
+        System.out.println(IntStream.rangeClosed(1, numero).reduce(1, (a, b) -> a * b));
     }
 }
