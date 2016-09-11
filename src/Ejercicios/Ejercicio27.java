@@ -1,7 +1,5 @@
 package Ejercicios;
 
-import java.math.BigInteger;
-import java.util.Objects;
 import java.util.stream.IntStream;
 
 /**
