@@ -16,13 +16,8 @@ public class Ejercicio9 {
         try {
             Scanner entrada = new Scanner(System.in);
             num = entrada.nextDouble();
-            if (num == 0) {
-                System.out.println("Es un 0!");
-            } else if (num > 0){
-                System.out.println("Es positivo!");
-            } else {
-                System.out.println("Es negativo!!");
-            }
+
+            System.out.println((num == 0) ? "Es un 0" : (num < 0) ? "Es negativo" : "Es positivo");
         } catch (InputMismatchException ex) {
             System.out.println("No!! Ese no!");
         }

@@ -1,5 +1,7 @@
 package Ejercicios;
 
+import java.math.BigInteger;
+import java.util.Objects;
 import java.util.stream.IntStream;
 
 /**
@@ -10,7 +12,8 @@ import java.util.stream.IntStream;
  */
 public class Ejercicio20 {
     public static void main(String[] args) {
-        Integer numero = 6;
-        System.out.println(IntStream.rangeClosed(1, numero).reduce(1, (a, b) -> a * b));
+        Integer numero = 50;
+        System.out.println(IntStream.rangeClosed(1, numero).mapToObj(Objects::toString).map(BigInteger::new).
+                reduce(new BigInteger("1"), (a, b) -> a.multiply(b)));
     }
 }
