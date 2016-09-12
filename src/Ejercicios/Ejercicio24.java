@@ -22,11 +22,7 @@ public class Ejercicio24 {
                         divisibles++;
                     }
                 }
-                if (divisibles > 1) {
-                    System.out.println("No es primo");
-                } else {
-                    System.out.println("Es primo");
-                }
+                System.out.println((divisibles > 1) ? "No es primo" : "Es primo");
             } else {
                 System.out.println("No es un número válido!!");
             }

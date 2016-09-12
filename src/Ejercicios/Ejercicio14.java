@@ -20,7 +20,7 @@ public class Ejercicio14 {
         try {
             for (int i = 0; i < 5; i++) {
                 Scanner entrada = new Scanner(System.in);
-                 Integer num = entrada.nextInt();
+                Integer num = entrada.nextInt();
                 numeros.add(num);
             }
         } catch (InputMismatchException ex) {
