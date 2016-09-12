@@ -1,5 +1,9 @@
 package Ejercicios;
 
+import java.util.OptionalInt;
+import java.util.Random;
+import java.util.stream.IntStream;
+
 /**
  * @author iza19
  * @version 1.0
@@ -8,5 +12,12 @@ package Ejercicios;
  */
 public class Ejercicio29 {
     public static void main(String[] args) {
+        Integer c = 0;
+        Random random = new Random();
+
+        for (int i = 0; i < 100; i++) {
+            c = (random.nextInt(7) + random.nextInt(7) == 10) ? c+1 : c;
+        }
+        System.out.println(c);
     }
 }
