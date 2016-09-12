@@ -8,5 +8,7 @@ package Ejercicios;
  */
 public class Ejercicio30 {
     public static void main(String[] args) {
+        Double caballo1 = Math.random();
+        System.out.println((caballo1 < 0.5) ? "Gana caballo 1" : "Gana caballo 2");
     }
 }
