@@ -1,8 +1,6 @@
 package Ejercicios;
 
-import java.util.OptionalInt;
 import java.util.Random;
-import java.util.stream.IntStream;
 
 /**
  * @author iza19
