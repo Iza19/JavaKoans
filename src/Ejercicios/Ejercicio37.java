@@ -1,5 +1,10 @@
 package Ejercicios;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.stream.IntStream;
+
 /**
  * @author iza19
  * @version 1.0
@@ -8,5 +13,16 @@ package Ejercicios;
  */
 public class Ejercicio37 {
     public static void main(String[] args) {
+        IntStream row1 = new Random().ints(5, 1, 100);
+        IntStream row2 = new Random().ints(5, 1, 100);
+        IntStream row3 = new Random().ints(5, 1, 100);
+        IntStream row4 = new Random().ints(5, 1, 100);
+        row1.forEach((n) -> System.out.print(n + "   "));
+        System.out.println();
+        row2.forEach((n) -> System.out.print(n + "   "));
+        System.out.println();
+        row3.forEach((n) -> System.out.print(n + "   "));
+        System.out.println();
+        row4.forEach((n) -> System.out.print(n + "   "));
     }
 }
